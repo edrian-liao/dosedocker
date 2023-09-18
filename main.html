@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoseDocker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- <h1 class = "title">DoseDocker</h1>
+    <p class = "subtitle">Medication monitoring system for nurses</p> -->
+    <div class = "search-container">
+        <label for="filter1">Patient Name: </label>
+        <input type="text" id="filter1" placeholder="e.g. Edrian Liao">
+        <label for="filter2">Date:  </label>
+        <input type="text" id="filter2" placeholder="Enter date here">
+        <button id="searchButton">Search</button>
+    </div>
+    
+
+    <!-- Box Status -->
+    <div class = "box">
+        <!-- Card per Day (7 card in total) -->
+        <div class = "card" id = "">
+            <h2>Sun</h2>
+        </div>
+        <div class = "card">
+            <h2>Mon</h2>
+        </div>
+        <div class = "card">
+            <h2>Tue</h2>
+        </div>
+        <div class = "card">
+            <h2>Wed</h2>
+        </div>
+        <div class = "card">
+            <h2>Thu</h2>
+        </div>
+        <div class = "card">
+            <h2>Fri</h2>
+        </div>
+        <div class = "card">
+            <h2>Sat</h2>
+        </div>
+    </div>
+    
+    <div class = "table-container">
+        <div class="table">
+            <h1>Patient Actions Log</h1>
+            <p>Time log of patient's attempts to open the pill box.</p>
+            <table id = "actions-log">
+                <thead>
+                    <tr>
+                        <th>Patient</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be populated here dynamically from MongoDB -->
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="table">
+            <h1>Medicine Administration Log</h1>
+            <p>List of nurses who placed the prescriptions in the patient's pill box.</p>
+            <table id = "admin-log">
+                <thead>
+                    <tr>
+                        <th>Patient</th>
+                        <th>Medicine</th>
+                        <th>Nurses-in-charge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be populated here dynamically from MongoDB -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 DoseDocker</p>
+    </footer>
+    <script src="bundle.js"></script>
+</body>
+</html>

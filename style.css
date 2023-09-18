@@ -1,0 +1,176 @@
+body {
+    font-family: 'Lato', sans-serif;
+    max-width: 80%; /* Adjust this value to your desired maximum width */
+    margin: 30px auto 0;
+    padding: 30px;
+}
+
+h1, h2, caption{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .title {
+    font-size: 50px;
+    text-align: center;
+    color: #00ef78;
+}
+
+.subtitle {
+    font-size: 10px;
+    text-align: center;
+} */
+
+/* Style for the search bar container */
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60%; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+/* Style for the input fields */
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+/* Style for the search button */
+button {
+    background-color: #7d817f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hover effect for the search button */
+button:hover {
+    background-color: #70E9AD;
+    color: #000;
+}
+
+
+.box {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    width: calc(14.2857% - 20px); /* 100% / 7 cards - 20px margin */
+    /* padding-top: calc(14.2857% - 20px); Maintain a 1:1 aspect ratio */
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .box {
+        flex-direction: column;
+        align-items: center;
+        max-width: 30%;
+    }
+    .card {
+        width: 60%;
+    }
+}
+
+.table-container {
+    max-width: 100%;
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow tables to wrap to the next line on smaller screens */
+    justify-content: space-between; /*Space tables evenly*/
+    margin: 20px auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%; /* Adjust the width as needed */
+    border: 1px solid #ddd;
+    margin: 5px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+ /* Media query for responsiveness on smaller screens */
+@media (max-width: 1300px) {
+    .table-container {
+        flex-direction: column; /* Stack tables vertically */
+        align-items: center; /* Center-align tables */
+    }
+
+    .table {
+        background-color: #70E9AD;
+        width: 100%;
+        padding: 0px 20px 20px 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px; /* Optional margin for spacing between tables */
+        
+    }
+}
+
+/* Media query for responsiveness on larger screens */
+@media (min-width: 1300px) {
+    .table-container {
+        flex-wrap: nowrap; /* Prevent tables from wrapping on larger screens */
+    }
+    .table {
+        background-color: #70E9AD;
+        width: 45%;
+        padding: 5px 20px 20px 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        
+    }
+}
+
+/* Apply some basic styling to the footer */
+footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 20px; /* Padding around the content inside the footer */
+    text-align: center; /* Center-align the text */
+    margin-top:40px;
+}
+
+/* Style the footer text/link color when hovered */
+footer a:hover {
+    color: #ff4500; /* Change the text/link color to orange on hover */
+}
